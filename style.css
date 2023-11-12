@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+.header, .footer {
+    color: #F9FAF8;
+    background-color: #1F2937;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 16px;
+}
+
+a {
+    color: #F9FAF8;
+    text-decoration: none;
+}
