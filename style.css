@@ -1,3 +1,5 @@
+
+/*overall styling*/
 body {
     display: flex;
     flex-direction: column;
@@ -5,20 +7,95 @@ body {
     margin: 0;
 }
 
+.header, .footer, .section-1, .section-2, .section-3, .section-4 {
+    padding: 16px 100px;
+}
+
 .header, .footer {
     color: #F9FAF8;
     background-color: #1F2937;
-    padding: 16px;
     display: flex;
     justify-content: space-between;
 }
 
+.section-1, .section-2, .section-3, .section-4 {
+    display: flex;
+    flex: 1;
+}
+
+/*section 1*/
+.section-1 {
+    color: #F9FAF8;
+    background-color: #1F2937;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.left, .right {
+    width: 350px;
+    max-width: 1000px;
+    flex: auto;
+}
+
+#cover-image {
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/*section 2*/
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.illustrations {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.illustrations li {
+    display: flex;
+    flex-direction: column;
+}
+
+.illustration {
+    display: flex;
+    align-items: flex-end;
+    flex-shrink: 0;
+    width: 140px;
+    max-width: 500px;
+    padding: 10px;
+    border: 2.5px solid #3882F6;
+    border-radius: 10px;
+}
+
+.illustration img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/*list*/
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     gap: 16px;
+}
+
+/*links and buttons*/
+button {
+    color: #F9FAF8;
+    background-color: #3882F6;
+    border-color: #F9FAF8;
+    padding: 10px;
+    border: 10px;
+    border-radius: 10px;
 }
 
 a {
