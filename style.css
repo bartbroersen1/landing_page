@@ -49,25 +49,30 @@ body {
 .section-2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     gap: 10px;
 }
 
 .illustrations {
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.illustrations li {
-    display: flex;
-    flex-direction: column;
+    flex: 1;
 }
 
 .illustration {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 145px;
+}
+
+.illustration li {
+    display: flex;
     align-items: flex-end;
     flex-shrink: 0;
-    width: 140px;
+    width: 145px;
+    height: 145px;
     max-width: 500px;
     padding: 10px;
     border: 2.5px solid #3882F6;
