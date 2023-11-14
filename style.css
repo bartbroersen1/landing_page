@@ -20,6 +20,8 @@ body {
 
 .section-1, .section-2, .section-3, .section-4 {
     display: flex;
+    align-items: center;
+    padding-bottom: 50px;
     flex: 1;
 }
 
@@ -28,15 +30,13 @@ body {
     color: #F9FAF8;
     background-color: #1F2937;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
 .left, .right {
     width: 350px;
-    max-width: 1000px;
-    flex: auto;
 }
 
 #cover-image {
@@ -49,40 +49,39 @@ body {
 .section-2 {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     gap: 10px;
+    text-align: center;
 }
 
 .illustrations {
     flex-wrap: wrap;
     justify-content: space-between;
-    flex: 1;
+    flex: auto;
+    max-width: 750px;
 }
 
-.illustration {
+.illustrations li {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    width: 145px;
+    max-width: 170px;
 }
 
-.illustration li {
+.illu {
     display: flex;
     align-items: flex-end;
-    flex-shrink: 0;
-    width: 145px;
-    height: 145px;
-    max-width: 500px;
+    flex: 1;
     padding: 10px;
     border: 2.5px solid #3882F6;
     border-radius: 10px;
 }
 
-.illustration img {
+.illu img {
     width: 100%;
     object-fit: contain;
 }
+
+/*section 3*/
 
 /*list*/
 ul {
@@ -98,12 +97,21 @@ button {
     color: #F9FAF8;
     background-color: #3882F6;
     border-color: #F9FAF8;
-    padding: 10px;
+    padding: 5px;
     border: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
+    width: 100px;
 }
 
 a {
     color: #F9FAF8;
     text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+h1 {
+    margin-bottom: 0;
 }
